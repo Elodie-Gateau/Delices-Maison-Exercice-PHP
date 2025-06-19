@@ -1,0 +1,35 @@
+.about {
+  &__content {
+    padding: 2rem 2rem;
+    line-height: 1.6rem;
+  }
+
+  .about-top {
+    background-color: $red;
+    width: 100%;
+    color: $white;
+    padding: 2rem;
+    line-height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-left: 1rem;
+    }
+
+    &__item {
+      list-style-type: none;
+    }
+
+    &__item::before {
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      content: '\f00c';
+      padding-right: 10px;
+    }
+  }
+}

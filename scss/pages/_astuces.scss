@@ -1,0 +1,42 @@
+.astuces {
+  &__title {
+    padding: 3rem 0;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    color: $white;
+    width: 100%;
+    padding: 2rem 0;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .astuces-item {
+    background-color: $silver;
+    padding: 2rem 1rem;
+    @media (min-width: 1024px) {
+      width: 45%;
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    &__title {
+      font-family: $font-base;
+      padding: 1rem 0;
+    }
+
+    &__title::before {
+      content: '🚨';
+    }
+
+    &__content {
+      text-align: center;
+    }
+  }
+}

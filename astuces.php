@@ -6,16 +6,19 @@ include 'includes/header.php';
 
     <section class="astuces">
         <h1 class="astuces__title">Astuces</h1>
-        <?php foreach ($astuces as $key => $value) { ?>
-            <div class="astuces-item">
-                <h2 class="astuces-item__title">
-                    <?= $value["titre"] ?>
-                </h2>
-                <p class="astuces-item__content">
-                    <?= $value["contenu"] ?>
-                </p>
-            </div>
-        <?php } ?>
+        <div class="astuces__container">
+            <?php foreach ($astuces as $key => $value) { ?>
+                <div class="astuces-item">
+                    <h2 class="astuces-item__title">
+                        <?= $value["titre"] ?>
+                    </h2>
+                    <p class="astuces-item__content">
+                        <?= $value["contenu"] ?>
+                    </p>
+                </div>
+
+            <?php } ?>
+        </div>
     </section>
 </main>
 <?php

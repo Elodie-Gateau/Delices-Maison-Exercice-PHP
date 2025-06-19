@@ -1,0 +1,129 @@
+.recipes {
+  padding: 1rem;
+  &__noresult {
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+
+  .recipes-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+
+    &__input {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid $timberwolf;
+      border-radius: 5px;
+      @media (min-width: 1024px) {
+        width: 50%;
+      }
+    }
+
+    &__buttons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    &__button,
+    &__reset {
+      text-decoration: none;
+      background-color: $timberwolf;
+      padding: 0.5rem 1rem;
+      border: 1px solid $silver;
+      border-radius: 5px;
+      font-family: $font-base;
+      color: $text-primary;
+      font-size: 1rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 6rem 0 10% 0;
+    }
+
+    .recipes-item {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid $silver;
+      background-color: $timberwolf;
+      box-shadow: 2px 2px 10px $timberwolf;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+
+      @media (min-width: 768px) {
+        width: 45%;
+      }
+
+      @media (min-width: 1024px) {
+        width: 20%;
+      }
+
+      &__title {
+        cursor: pointer;
+        font-family: $font-title;
+        padding: 0.5rem;
+      }
+
+      &__link {
+        text-decoration: none;
+        color: $coyote;
+      }
+
+      &__picture {
+        max-width: 70%;
+        border-radius: 10px;
+      }
+
+      &__time {
+        font-weight: 600;
+      }
+
+      &__time::before {
+        content: '⏲️';
+      }
+
+      .recipes-item-difficulty {
+        &__container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+        }
+
+        &__title {
+          font-weight: 600;
+        }
+
+        &__stars {
+          color: $gold;
+        }
+      }
+
+      &__desc {
+        text-align: center;
+      }
+    }
+    .recipes-item:hover {
+      background-color: $silver;
+      box-shadow: 1px 1px 15px $silver;
+    }
+  }
+}

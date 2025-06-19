@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Délices Maison</title>
-    <link rel="stylesheet" href="/recettes-cuisine/css/style.css">
+    <script src="https://kit.fontawesome.com/dd4cb0f64d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/arinfo/recettes-cuisine/css/style.css">
 </head>
 
 <body>

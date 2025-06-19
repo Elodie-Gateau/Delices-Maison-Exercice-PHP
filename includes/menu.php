@@ -1,4 +1,4 @@
-<nav>
+<nav class="header-nav">
     <ul class="header-nav__list">
         <li class="header-nav__item"><a class="header-nav__link" href="./index.php">Accueil</a></li>
         <li class="header-nav__item"><a class="header-nav__link" href="./recettes.php">Recettes</a></li>

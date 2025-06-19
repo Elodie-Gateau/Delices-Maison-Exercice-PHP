@@ -1,0 +1,25 @@
+body {
+  color: $text-primary;
+  font-family: $font-base;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-title;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
