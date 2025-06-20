@@ -1,0 +1,14 @@
+@mixin button {
+  text-decoration: none;
+  background-color: $timberwolf;
+  padding: 0.5rem 1rem;
+  border: 1px solid $silver;
+  border-radius: 5px;
+  font-family: $font-base;
+  color: $text-primary;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: $silver;
+  }
+}

@@ -77,4 +77,14 @@
     font-style: italic;
     font-weight: 600;
   }
+
+  .home-randomRecipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    .recipes-item {
+      @include card;
+    }
+  }
 }

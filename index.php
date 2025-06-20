@@ -1,6 +1,12 @@
 <?php
 
 include 'includes/header.php';
+require_once './fonctions/utils.php';
+require_once 'data/recettes.php';
+
+$recipe = randomRecipe($recettes);
+$slug = slugify($recipe["titre"]);
+$link = makeUrl($slug);
 ?>
 <main>
 
@@ -25,6 +31,10 @@ include 'includes/header.php';
                 <li class="home-description__item">Recettes saines et équilibrées</li>
                 <li class="home-description__item">Astuces et conseils pratiques pour réussir toutes vos préparations</li>
             </ul>
+        </div>
+        <div class="home-randomRecipe">
+            <h2>Zoom sur ...</h2>
+            <?php include 'includes/recipe_card.php'; ?>
         </div>
         <p class="home__sentence">
             Bonne visite et surtout... bon appétit !

@@ -10,11 +10,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 0.5rem;
     gap: 2rem;
 
-    &__input {
+    .recipes-form__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
+      gap: 2rem;
+    }
+    .recipes-filterByLevel {
+      &__link {
+        @include button;
+      }
+    }
+
+    &__input {
+      width: 70%;
       padding: 1rem;
       border: 1px solid $timberwolf;
       border-radius: 5px;
@@ -26,104 +39,57 @@
     &__buttons {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       gap: 1rem;
     }
 
     &__button,
     &__reset {
-      text-decoration: none;
-      background-color: $timberwolf;
-      padding: 0.5rem 1rem;
-      border: 1px solid $silver;
-      border-radius: 5px;
-      font-family: $font-base;
-      color: $text-primary;
-      font-size: 1rem;
+      @include button;
     }
   }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 0;
-
-    @media (min-width: 768px) {
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 6rem 0 10% 0;
+  .recipes-filterByCategory {
+    &__link {
+      @include button;
     }
+  }
 
-    .recipes-item {
-      width: 100%;
-      padding: 1rem;
-      border-radius: 10px;
-      border: 1px solid $silver;
-      background-color: $timberwolf;
-      box-shadow: 2px 2px 10px $timberwolf;
+  .recipes-category,
+  .recipes-level {
+    &__list {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      align-items: center;
+      gap: 2rem;
+      padding: 3rem 0;
 
       @media (min-width: 768px) {
-        width: 45%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 6rem 0 10% 0;
       }
 
-      @media (min-width: 1024px) {
-        width: 20%;
-      }
+      .recipes-item {
+        @include card;
 
-      &__title {
-        cursor: pointer;
-        font-family: $font-title;
-        padding: 0.5rem;
-      }
-
-      &__link {
-        text-decoration: none;
-        color: $coyote;
-      }
-
-      &__picture {
-        max-width: 70%;
-        border-radius: 10px;
-      }
-
-      &__time {
-        font-weight: 600;
-      }
-
-      &__time::before {
-        content: '⏲️';
-      }
-
-      .recipes-item-difficulty {
-        &__container {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
+        .recipes-item-difficulty {
+          @include level;
         }
-
-        &__title {
-          font-weight: 600;
-        }
-
-        &__stars {
-          color: $gold;
-        }
-      }
-
-      &__desc {
-        text-align: center;
       }
     }
-    .recipes-item:hover {
-      background-color: $silver;
-      box-shadow: 1px 1px 15px $silver;
-    }
+  }
+}
+
+.recipe-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+
+  table {
+    @include table;
   }
 }
