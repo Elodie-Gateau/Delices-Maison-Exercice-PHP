@@ -93,10 +93,10 @@ recettes-cuisine/
 
 ## ✅ Alignement référentiel DWWM
 
-- **Front‑end** : intégration d’interfaces statiques/dynamiques, responsivité, accessibilité, qualité (SCSS modulaire).  fileciteturn29file0
-- **Back‑end** : logique de traitement (filtres/tri), gestion d’URL/slug, hygiène des entrées (sécurité).  fileciteturn28file0
-- **Organisation** : séparation du code (includes, data, fonctions), documenter et structurer.  fileciteturn29file0
-- **Communication & démarche** : résolution de problèmes, veille (ex. choix SCSS, perf, accessibilité).  fileciteturn28file0
+- **Front‑end** : intégration d’interfaces statiques/dynamiques, responsivité, accessibilité, qualité (SCSS modulaire). 
+- **Back‑end** : logique de traitement (filtres/tri), gestion d’URL/slug, hygiène des entrées (sécurité).  
+- **Organisation** : séparation du code (includes, data, fonctions), documenter et structurer.  
+- **Communication & démarche** : résolution de problèmes, veille (ex. choix SCSS, perf, accessibilité).  
 
 ---
 
